@@ -1,4 +1,15 @@
+<!DOCTYPE html>
+<head>
+  <script>
+  function testResults(form) {
+    var username = form.username.value;
 
+
+    alert ("You registered: " + username + ", ");
+  }
+
+  </script>
+</head>
 <body>
 
 <h1>Register</h1>
@@ -23,6 +34,7 @@
 <br>
 <input type="text" name="about" value=""placeholder="Personal Information">
 <br>
-<input type="submit" name="" value="Submit" placeholder="Submit">
+<input type="submit" name="submit" value="Submit" placeholder="Submit" onclick="testResults(this.form)"/>
 </form>
 </body>
+</html>
