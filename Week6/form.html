@@ -7,15 +7,26 @@
 		</title>
 		<script>
 		function validate() {
+			var search = document.getElementById('search');
+			var searchvalue = search.value;
+
+			if (searchvalue = ""){
+				alert("blank search");
+				return false;
+			}
+			else {
+				alert("completed search");
+				return true;
+			}
 			// check if we have a search term before searching
 			// 1. get a reference to the searchbox
 			//    using the DOM api method document.getElementById();
 			// searchbox = ???;
-			
+
 			// 2. get the value of the searchbox
 			//    using the DOM api value property of an element
 			// searchvalue = ???;
-			
+
 			// 3. test if the value is not equal to an empty string ("")
 			// if (???) {
 			// 	return true;
