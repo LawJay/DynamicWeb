@@ -7,16 +7,16 @@
 		</title>
 		<script>
 		function validate() {
-			var search = document.getElementById('searchbox');
+			var searchbox = document.getElementById('searchbox');
 			var searchvalue = searchbox.value;
 
-			if (searchvalue = ""){
+			if (searchvalue != ' '){
 				alert("blank search");
-				return false;
+				return true;
 			}
 			else {
 				alert("completed search");
-				return true;
+				return false;
 			}
 			// check if we have a search term before searching
 			// 1. get a reference to the searchbox
