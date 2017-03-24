@@ -26,9 +26,11 @@ function addResultTitles(jsondata) {
 	//iterate over the collection of results
 	for (var i=0; i<10; i++){
 		var title = jsondata.Search[i].Title;
-		htmlstring += "<li>" + title + "</li>";
+		var poster = jsondata.Search[i].Poster;
+		htmlstring += "<li>" + title +"</li>" + "<img src = '"+poster+">";
 	}
 
 	//inject the HTML into our empty list
 	$("#results").html(htmlstring);
+
 }
