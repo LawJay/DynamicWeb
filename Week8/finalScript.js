@@ -17,7 +17,7 @@ function getResultsFromYouTube (searchterms) {
 			//handle the results
 			addResultTitles(jsondata);
 		});
-		
+
 }
 
 function addResultTitles(jsondata) {
@@ -28,9 +28,7 @@ function addResultTitles(jsondata) {
 		var title = jsondata.Search[i].Title;
 		htmlstring += "<li>" + title + "</li>";
 	}
-	
+
 	//inject the HTML into our empty list
 	$("#results").html(htmlstring);
 }
-
-
