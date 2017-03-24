@@ -28,6 +28,7 @@ function addResultTitles(jsondata) {
 		var title = jsondata.Search[i].Title;
 		var poster = jsondata.Search[i].Poster;
 		htmlstring += "<li>" + title + "<img src = '"+poster+"'/></li>";
+		<p> test </p>
 	}
 
 	//inject the HTML into our empty list
